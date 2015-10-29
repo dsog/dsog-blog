@@ -31,6 +31,7 @@
 #post-content {
   a {
     transition: all $aside-animation-time;
+    color: $tilt-blue;
 
     &::after {
       position: absolute;
@@ -42,10 +43,10 @@
 
       content: "";
 
-      border-bottom: 1px solid $primary-color;
+      border-bottom: 1px solid $tilt-blue;
     }
     &:hover {
-      border-color: $hover-color;
+      border-color: $tilt-blue;
     }
   }
 }

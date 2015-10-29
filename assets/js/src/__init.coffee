@@ -9,8 +9,6 @@ $ ->
       container: -> $('#results')
       form: (action) -> $("#search-container")[action]()
 
-    loadingBar: (action) -> $(".pace")[action]()
-
     context: ->
       # get the context from the first class name of body
       # https://github.com/TryGhost/Ghost/wiki/Context-aware-Filters-and-Helpers

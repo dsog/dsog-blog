@@ -1,9 +1,11 @@
-<aside class="cover" style="background: url({{@blog.cover}}) center/cover no-repeat fixed">
-  <div class="cover container">
+<aside class="cover expanded" style="background: #000;">
+  <div class="cover expanded background-image">
+  </div>
+  <div class="cover container expanded">
     <div class="profile">
       {{#if @blog.logo}}
-      <a id="avatar-link" title="link to homepage for {{@blog.title}}" href="{{@blog.url}}/#open">
-        <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="profile avatar rounded hvr-buzz-out" />
+      <a id="avatar-link" href="{{@blog.url}}">
+        <img src="{{@blog.logo}}" alt="{{@blog.title}} avatar" class="profile avatar rounded" />
         <h1 id="profile-title">{{@blog.title}}</h1>
         <h3 id="profile-resume"></h3>
       </a>

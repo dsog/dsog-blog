@@ -24,6 +24,10 @@
   }
 }
 
+.background-image{
+  background: #000;
+}
+
 #profile-resume {
   display: none;
 }
@@ -57,6 +61,12 @@
 
       border: 2px solid rgba($primary-color, .1);
       box-shadow: 0 0 1px 1px rgba(000, 000, 000, .3);
+      transition: transform 0.5s;
+
+      &:hover{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+      }
     }
   }
 }
@@ -80,12 +90,10 @@
           display: inline-block;
           margin: 0 5px;
 
-          border-radius: 20px;
-
-          @include btn-cover-with-border;
-
           > a {
+            border-radius: 20px;
             padding: .625rem 1.25rem;
+            @include btn-cover-with-border;
           }
         }
 
@@ -100,7 +108,12 @@
           @include btn-cover;
 
           &:hover {
-            color: $hover-color;
+            // color: $hover-color;
+            opacity: 0.5;
+
+            .expanded &{
+              // background: #fff;
+            }
           }
         }
       }
@@ -129,7 +142,7 @@
             font-size: 1.7em;
           }
           &:hover {
-            color: $hover-color;
+            opacity: 0.5;
           }
         }
       }
